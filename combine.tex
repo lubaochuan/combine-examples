@@ -1,0 +1,36 @@
+\documentclass[report,twoside]{combine}
+\usepackage{fancyhdr}
+
+\title{The collection}
+\author{A. N. Editor}
+\date{29 February, 2000}
+
+\pagestyle{fancy}
+\fancyhead[RO]{A. N. Editor}
+\fancyhead[LE]{The collection}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\newcommand{\authortochead}[1]{%
+  \coltocauthor{#1}
+  \fancyhead[RO]{#1}
+}
+
+
+\begin{document}
+\pagestyle{combine} % use the combine page style
+\maketitle % main title
+\tableofcontents % main ToC
+\clearpage
+\begin{papers}
+\coltoctitle{A Sample Article for  \textsc{ Mathematics Magazine}}
+\authortochead{A. N. Auther}
+\coltocauthor{Jack Q.~Firstauthor} % first authors into main ToC
+\import{mm1}
+
+\coltoctitle{A second piece} 
+\authortochead{A. N. Auther}
+\coltocauthor{Jill P.~Secondauthor}
+\import{mm2}
+\end{papers}
+
+\end{document}

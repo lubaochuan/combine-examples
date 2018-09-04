@@ -1,0 +1,137 @@
+% Article template for Mathematics Magazine
+% Revised 7/2002  Thanks for Greg St. George
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+\renewcommand{\baselinestretch}{1.2}
+%This is the command that spaces the manuscript for easy reading
+
+\begin{document}
+%\thispagestyle{empty}
+\begin{center}
+\Large
+A second piece
+\end{center}
+
+\begin{flushright}
+Jack Q.~Firstauthor\footnote{Supported by the National Science
+Foundation.}  \\
+XXXX University \\
+City, State 98765-4321\\
+\verb+email@optional.edu+
+
+\vspace{2 mm}
+
+Jill P.~Secondauthor \\
+Department of Physics
+\footnote{Authors are in alphabetical order
+unless there is an extraordinary reason to do otherwise.  Also,
+the author address includes a department \emph{only} if
+the department is \emph{not} mathematics. We use as few
+footnotes as possible in the \textit{Magazine}.  This one, for instance,
+contains information that really belongs in the body of the paper.
+The previous footnote probably belongs among the Acknowledgments at the end.}\\
+ZZZZ College \\
+City, State 12345-6789
+\end{flushright}
+
+This document is meant to help you prepare an Article for
+submission to \textsc{Mathematics Magazine}.  Of course,
+editorial decisions depend entirely on
+what you say and how you say it. Nonetheless, we will all save
+time if you exercise some care in how you first present the paper.
+
+Now that I have caught your attention with an interesting introductory paragraph,
+here is what you will find:
+specific information about the style of Articles in the \textsc{Magazine}
+and a description of the \LaTeX\ code we prefer that you use
+to prepare your manuscript.
+
+Since this section is very clearly
+an introduction, I thought that labeling it ``Introduction" would add
+nothing.  Note that I am willing to use the first person in an Article
+and you might be as well.  Another equally respectable choice is ``we,''
+even when there is only one author; this can
+create an author-reader partnership to
+work through the mathematics together.
+Whatever voice you choose, consistency is important.
+
+You may be looking at this document in a variety of ways:  the .pdf or .ps files
+are meant to be viewed on a screen or printed, while
+the .tex file contains the codes used to create those
+viewable versions via the program \LaTeX.  Even if you are a novice with \TeX,
+there may be enough here to teach you what
+you need to know.  And if you are an ace with \TeX,
+we have a warning: please do not overload your
+document with special kludges and tricks that will
+only be removed later by our compositor.
+
+This document is prepared with extremely simple \LaTeX\ formatting,
+using the unadorned \verb+article+ template.
+It is designed for simplicity and ease of handling---not
+to imitate the \textsc{Magazine}'s final, typeset style in every
+detail.    For authors less familiar with \LaTeX, we offer a
+brief lesson, showing how certain common elements of mathematical
+style are typeset using this program.  For hardcore technical
+specifications, please see the Electronic Publication Guidelines~\cite{MAA}.
+
+\subsection*{Notes on writing an Article}
+Articles in the \textsc{Magazine} tend to be longer and
+more substantial than Notes,
+offering a broad overview of some field
+or making new connections.
+Being longer, they often
+benefit from more sectioning. We use
+the \verb+\subsection*+ command to create titles
+for these sections, which are not usually numbered
+(the \verb+*+ in \verb+\subsection*+ accomplishes this).
+
+To judge the length of your piece,  consider that
+this document prints to six pages with the current code, but would run
+about four pages in the \textsc{Magazine}.  The current settings produce
+a document that is generously spaced in consideration of
+referees' eyesight.
+
+Few pieces of mathematical writing are entirely self-contained,
+although we try to make Articles reasonably so.    Consider
+providing a section of background material that our
+more knowledgeable readers can skip. Define
+enough terms to enable an eager undergraduate student
+to read your piece without having to consult
+too many references.
+
+For readers intrigued by your exposition,
+you should provide friendly references.
+Bibliographies may contain suggested reading along with sources actually referenced.  In all cases,
+cite sources that are currently and readily available.
+
+\LaTeX\ has a way to keep track of references automatically,
+which is illustrated in the code that ends this file.  To refer
+to Halmos~\cite{Halmos}, you use a codename that you have created
+as a mnemonic, often the author's last name.
+ \LaTeX\
+ keeps track, numbering the references in
+the order they appear in your list.  If you add a reference
+(positioning it correctly in the list) the numbers will be adjusted accordingly.
+
+Please follow our bibliographic format carefully, based
+on the examples below.  Entries may appear either in alphabetical
+order or in order of citation (but choose one order and
+stick to it).   Journal titles are abbreviated
+as in \emph{Mathematical Reviews},
+for instance, \textit{Amer. Math. Monthly}; volume numbers
+of journals are set in \textbf{bold}.  Authors names are
+not inverted: Frank A. Farris, not Farris, Frank A.~\cite{Farris}.
+The abbreviation pp. is used for books, but not journal
+articles.  Note the slightly different style for
+citing articles in the \textsc{Magazine}.
+
+
+\paragraph*{How to do things in \LaTeX}
+
+Roman letters used as variables will be correctly
+italicized if enclosed with \$s in your code, as in ``functions $f$, $g$, and $h$.''
+This makes for typing lots of \$s when writing in \TeX.
+Other popular fonts are $\mathcal A$, for sets and the like, and\cite{adams1995hitchhiker}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
